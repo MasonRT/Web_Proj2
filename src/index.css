@@ -1,0 +1,43 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+.board {
+  display: inline-block;
+  margin: 0 auto;
+}
+
+.row {
+  display: flex;
+}
+
+.cell {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #ccc;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.cell.hidden {
+  background-color: #eee;
+}
+
+.cell.safe {
+  background-color: #b0e57c;
+}
+
+.cell.mine {
+  background-color: #e57373;
+}
+
+.cell.flag {
+  color: red;
+}
